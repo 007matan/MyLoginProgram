@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfaf7"
+    android:id="@+id/nisayon"
+
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/animation_view_2"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/lottie_halloween_pumpkin"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <Button
+        android:id="@+id/main_BTN_enter"
+        android:visibility="visible"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="#FFB907"
+        android:text="Enter">
+
+    </Button>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/lottie_clown_dis"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+
+    <LinearLayout
+        android:id="@+id/main_LL_passOption"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="#E89A26"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the password?"
+            android:layout_marginStart="75dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="30dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/main_MTR_BTN_textOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You want to type something?"
+            android:backgroundTint="#AFBF0A"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp">
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/main_LL_passOption2"
+            android:visibility="invisible"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#FDB9B9"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/main_EDT_TXT_textPass"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="#D5BDBD"
+                >
+
+            </EditText>
+            <Button
+                android:id="@+id/main_BTN_textPass"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="35dp"
+                android:text="Enter">
+
+            </Button>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/main_MTR_BTN_sensorsOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let me use your sensors only!"
+            android:backgroundTint="#AFBF0A"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/main_MTR_BTN_backOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:backgroundTint="#D12446"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="30dp">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
